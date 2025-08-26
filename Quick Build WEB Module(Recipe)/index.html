@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Recipe Cards</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ================== Card 1 ================== -->
+    <main class="recipe-card">
+        <header>
+            <h1>Chocolate Cake</h1>
+            <div class="meta">
+                <span><strong>Prep Time:</strong> <span class="prep-time">45 min</span></span>
+                <span><strong>Serves:</strong> 8</span>
+            </div>
+        </header>
+
+        <img src="chocolate.jpg" alt="Delicious Chocolate Cake" class="recipe-img" />
+
+        <section class="controls">
+            <button class="toggle-ingredients" type="button">Show Ingredients</button>
+            <button class="toggle-steps" type="button">Show Steps</button>
+            <button class="start-cooking" type="button">Start Cooking</button>
+            <button class="print-btn" type="button">Print Recipe</button>
+        </section>
+
+        <section class="ingredients-section collapsible">
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>1 and 1/2 cups all-purpose flour</li>
+                <li>1 cup sugar</li>
+                <li>1/2 cup unsweetened cocoa powder</li>
+                <li>1 tsp baking soda</li>
+                <li>1/2 tsp salt</li>
+                <li>1 cup milk</li>
+                <li>1/3 cup vegetable oil</li>
+                <li>1 tsp vanilla extract</li>
+                <li>1 tbsp vinegar</li>
+            </ul>
+        </section>
+
+        <section class="steps-section collapsible">
+            <h2>Steps</h2>
+            <ol class="steps-list">
+                <li>Preheat oven to 350°F (175°C). Grease a round cake pan.</li>
+                <li>In a bowl, whisk together flour, sugar, cocoa, baking soda, and salt.</li>
+                <li>Add milk, oil, and vanilla, and mix until smooth.</li>
+                <li>Stir in vinegar (the batter will foam slightly).</li>
+                <li>Pour into pan and bake for 30–35 minutes.</li>
+                <li>Let the cake cool before slicing and serving.</li>
+            </ol>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="timer" aria-live="polite"></div>
+            <button class="next-step hide" type="button">Next</button>
+        </section>
+    </main>
+
+    <!-- ================== Card 2 ================== -->
+    <main class="recipe-card">
+        <header>
+            <h1>Tea</h1>
+            <div class="meta">
+                <span><strong>Prep Time:</strong> <span class="prep-time">10 min</span></span>
+                <span><strong>Serves:</strong> 2</span>
+            </div>
+        </header>
+
+        <img src="Tea.jpg" alt="Delicious tea" class="recipe-img" />
+
+        <section class="controls">
+            <button class="toggle-ingredients" type="button">Show Ingredients</button>
+            <button class="toggle-steps" type="button">Show Steps</button>
+            <button class="start-cooking" type="button">Start Cooking</button>
+            <button class="print-btn" type="button">Print Recipe</button>
+        </section>
+
+        <section class="ingredients-section collapsible">
+            <h2>Ingredients</h2>
+            <ul class="ingredients-list">
+                <li>2 cups water</li>
+                <li>2 teaspoons tea powder (or 2 tea bags)</li>
+                <li>1 cup milk</li>
+                <li>2 teaspoons sugar (adjust as per taste)</li>
+                <li>2–3 cardamom pods (optional)</li>
+                <li>1 small piece of ginger, crushed (optional)</li>
+            </ul>
+        </section>
+
+        <section class="steps-section collapsible">
+            <h2>Steps</h2>
+            <ol class="steps-list">
+                <li><strong>Boil Water:</strong> Bring 2 cups of water to a boil.</li>
+                <li><strong>Add Flavors (Optional):</strong> Add crushed ginger and cardamom.</li>
+                <li><strong>Add Tea Powder:</strong> Add tea and simmer 2–3 minutes.</li>
+                <li><strong>Add Milk & Sugar:</strong> Boil another 2–3 minutes.</li>
+                <li><strong>Simmer:</strong> Adjust to preferred strength and color.</li>
+                <li><strong>Strain & Serve:</strong> Strain into cups and enjoy.</li>
+            </ol>
+
+            <div class="progress-bar-container">
+                <div class="progress-bar"></div>
+            </div>
+            <div class="timer" aria-live="polite"></div>
+            <button class="next-step hide" type="button">Next</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
